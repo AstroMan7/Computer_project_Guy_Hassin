@@ -58,8 +58,7 @@ def read_rows(lines):
         values = line.split()  # create a list with the lines(title and data)
         if len(values) == 0:  # empty line
             return graph
-        graph[values[0].lower()] = [float(value) for value in
-                                    values[1:]]  # put title in key, put values in value????????להבין טוב יותר
+        graph[values[0].lower()] = [float(value) for value in values[1:]]  # for each row, put title in key, put values in value(list)
     return graph
 
 
@@ -227,7 +226,7 @@ def chi_2_red(graph):
 
 def main():
     graph = create_graph(
-        r"C:\Users\guy\Desktop\קורס מחשבים\inputOutputExamples\inputOutputExamples\workingcols\input.txt")
+        r"C:\Users\guy\Desktop\קורס מחשבים\inputOutputExamples\inputOutputExamples\workingrows\input.txt")
     if graph is None:
         return graph
 
@@ -235,9 +234,9 @@ def main():
     da = cal_da_square(graph) ** 0.5
     b = cal_b(graph)
     db = db_square(graph) ** 0.5
-    print("avg_x" + " " + str(numerator_avg_x(graph) / denominator_z(graph)))
-    print("avg_y" + " " + str(numerator_avg_y(graph) / denominator_z(graph)))
-    print("da_square" + " " + str(cal_da_square(graph)))
+#    print("avg_x" + " " + str(numerator_avg_x(graph) / denominator_z(graph)))
+#    print("avg_y" + " " + str(numerator_avg_y(graph) / denominator_z(graph)))
+#    print("da_square" + " " + str(cal_da_square(graph)))
 
     print("a = " + "" + str(a) + " +- " + str(da))
     print("b = " + "" + str(b) + " +- " + str(db))
