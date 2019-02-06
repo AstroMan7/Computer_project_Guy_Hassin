@@ -27,7 +27,8 @@ def row_formula(lines):
         for value in (graph['x']):
             formula = a * value + b
         i += 1
-        print('hhhhhhh')
+        
+        
 def read_rows(lines):
     graph = {}
     x= []
@@ -52,7 +53,7 @@ def create_graph(file_name):
         return graph                      # return True or False
     else:
         return None
-        #raise Exception ("Input file error: Data lists are not the same length")
+    file.close()
 
 def check_length(graph):
     graph_items  = [len(value) for key, value in graph.items()] # create a list with the length of each key-values///???????/
