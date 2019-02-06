@@ -230,24 +230,3 @@ if __name__ == '__main__':
     main()
 
 
-# def cal_db(graph)  #calculate dX2/db
-
-# def fun_db(x, dy):  # b פונקציה שמחשבת את השגיאה של
-#    dy_power_avg = 0
-#    s_dy = 0
-#    N = 0
-#    for i in range(0, len(dy)):
-#        dy_power_avg = dy_power_avg + ((dy[i] ** 2) / dy[i] ** 2)
-#        s_dy = s_dy + (1 / (dy[i] ** 2))
-#        N = N + 1
-#    dy_power_avg = dy_power_avg / (s_dy)
-#    x_avarage = 0
-#    power_x_avarage = 0
-#      for i in range(0, len(x)):
-#        x_avarage = x_avarage + (x[i] / (dy[i] ** 2))
-#        power_x_avarage = power_x_avarage + (x[i] ** 2 / (dy[i] ** 2))
-#    x_avarage = x_avarage / (s_dy)
-#    power_x_avarage = power_x_avarage / (s_dy)
-
-#        return np.sqrt((dy_power_avg) * (power_x_avarage) / (N * (power_x_avarage - (x_avarage ** 2))))
-# transpose
