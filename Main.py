@@ -225,8 +225,7 @@ def chi_2_red(graph):
 
 
 def main():
-    graph = create_graph(
-        r"C:\Users\guy\Desktop\קורס מחשבים\inputOutputExamples\inputOutputExamples\workingrows\input.txt")
+    graph = create_graph(r"input.txt")       # Enter your local file path!
     if graph is None:
         return graph
 
